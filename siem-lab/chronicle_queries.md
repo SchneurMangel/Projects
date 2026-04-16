@@ -40,13 +40,13 @@ security_result.action = "ALLOW"
 principal.ip = "185.220.101.45"
 ```
 
-**What changed:** `BLOCK` became `ALLOW` — now we are looking for successful logins instead of failed ones.
+**What changed:** `BLOCK` became `ALLOW` now we are looking for successful logins instead of failed ones.
 
 **What to look for:** If this returns one result, the attacker got in. The `target.user` field in that result will show which account was compromised.
 
 ---
 
-## Query 3 — Find the compromised account
+## Query 3 - Find the compromised account
 
 **Question:** Which user account did the attacker break into?
 
@@ -72,11 +72,11 @@ metadata.event_type = "NETWORK_CONNECTION"
 principal.ip = "185.220.101.45"
 ```
 
-**What changed:** Switched from `USER_LOGIN` to `NETWORK_CONNECTION` — now we are looking at all network activity from that IP, not just logins.
+**What changed:** Switched from `USER_LOGIN` to `NETWORK_CONNECTION` now we are looking at all network activity from that IP, not just logins.
 
 **What to look for:**
-- Connections to internal servers — possible lateral movement
-- Large outbound transfers — possible data exfiltration
+- Connections to internal servers possible lateral movement
+- Large outbound transfers possible data exfiltration
 - No results — attacker may not have done anything after getting in
 
 ---
@@ -90,7 +90,7 @@ metadata.event_type = "USER_LOGIN"
 principal.ip = "185.220.101.45"
 ```
 
-**What this does:** Removes the BLOCK/ALLOW filter so you see all login events — both failed and successful — in chronological order. This lets you build a timeline of the attack from first attempt to successful login.
+**What this does:** Removes the BLOCK/ALLOW filter so you see all login events both failed and successful in chronological order. This lets you build a timeline of the attack from first attempt to successful login.
 
 **What to look for:** The timestamps on each event. A gap between the last failed attempt and the successful one might indicate the attacker paused and changed their approach.
 
