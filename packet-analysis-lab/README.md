@@ -145,7 +145,7 @@ The included `analysis.py` applies the same detection logic above in Python.
 python analysis.py
 ```
 
-No extra libraries needed — runs on standard Python 3.
+No extra libraries needed runs on standard Python 3.
 
 ---
 
