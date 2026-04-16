@@ -54,7 +54,7 @@ The jsmith account had no lockout policy. This allowed the attacker to make unli
 1. 47 failed login attempts from 185.220.101.45 confirmed in Chronicle
 2. One successful login at 23:48:51 using the jsmith account
 3. Connection to internal file server after login
-4. 200 MB transferred outbound — possible data exfiltration
+4. 200 MB transferred outbound possible data exfiltration
 
 ---
 
