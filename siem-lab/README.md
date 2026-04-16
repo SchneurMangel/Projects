@@ -38,7 +38,7 @@ The successful login result showed the account `jsmith` was accessed. This accou
 
 **Step 4 — Checked what they did after**
 
-I searched for network activity from the attacker's IP after the login. There were two connections — one to an internal file server and one large outbound transfer. This suggests data may have been taken.
+I searched for network activity from the attacker's IP after the login. There were two connections one to an internal file server and one large outbound transfer. This suggests data may have been taken.
 
 ---
 
