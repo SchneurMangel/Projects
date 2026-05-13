@@ -1,7 +1,9 @@
 # Home Lab Portfolio
 **Shneur Mangel**  
 schneurmangel@gmail.com  
-CompTIA Security+ | Google Cybersecurity Certificate
+CompTIA Security+ 
+Google Cybersecurity Certificate
+Google IT certificate
 
 ---
 
